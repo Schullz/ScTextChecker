@@ -1,9 +1,8 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197
+VisualStudioVersion = 17.0.32002.185
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScTextChecker", "ScTextChecker\ScTextChecker.csproj", "{D108FBD7-7EFE-4D2D-B580-BA5A5CC9EA90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScTextChecker", "ScTextChecker\ScTextChecker.csproj", "{D4B3A1C4-3D71-4E01-B943-6787D3B6D609}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +10,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D108FBD7-7EFE-4D2D-B580-BA5A5CC9EA90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D108FBD7-7EFE-4D2D-B580-BA5A5CC9EA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D108FBD7-7EFE-4D2D-B580-BA5A5CC9EA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D108FBD7-7EFE-4D2D-B580-BA5A5CC9EA90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B3A1C4-3D71-4E01-B943-6787D3B6D609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B3A1C4-3D71-4E01-B943-6787D3B6D609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B3A1C4-3D71-4E01-B943-6787D3B6D609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B3A1C4-3D71-4E01-B943-6787D3B6D609}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E99B1E5-2282-456C-9545-236E8A09A13B}
 	EndGlobalSection
 EndGlobal
