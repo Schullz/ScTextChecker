@@ -5,7 +5,8 @@
 
 <DxButton Click="@ResetChat" Text="Reset chat" />
 <p> Temperature: </p><DxSpinEdit @bind-Value="@Temperature" MinValue="0" MaxValue="2" Increment="0.05f" />
-<DxAIChat Temperature="@Temperature" @ref="@RefAiChat" ResponseContentFormat="ResponseContentFormat.PlainText" />
+<DxAIChat Temperature="@Temperature" @ref="@RefAiChat" ResponseContentFormat="ResponseContentFormat.Markdown" />
+<p>You can use the following text area as your draft</p>
 <DxMemo  />
 
 @code {
@@ -13,8 +14,14 @@
     float Temperature { get; set; } = 0;
     string SystemPrompt { get; set; } = "You are a helpful assistant.";
 
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+            ResetChat();
+    }
+
     void ResetChat() {
-        
+
         using (var sr = new StreamReader("prompt.txt")) {
             SystemPrompt = sr.ReadToEnd();
         }
